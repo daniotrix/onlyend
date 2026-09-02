@@ -1,0 +1,6 @@
+{
+	"type": "minecraft:stronghold",
+	"biomes": "#onlyend:end_fortress_biomes",
+	"spawn_overrides": {},
+	"step": "surface_structures"
+}

@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "onlyend",
+	"version": "${version}",
+	"name": "Only End",
+	"description": "Empiezas en el End, y ahi te quedas: solo hay una dimension y el objetivo es vencer al Dragon sin salir de ella.",
+	"authors": [
+		"daniotrix"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/onlyend/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.daniotrix.onlyend.OnlyEnd"
+		],
+		"client": [
+			"com.daniotrix.onlyend.client.OnlyEndClient"
+		]
+	},
+	"mixins": [
+		"onlyend.mixins.json",
+		{
+			"config": "onlyend.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
