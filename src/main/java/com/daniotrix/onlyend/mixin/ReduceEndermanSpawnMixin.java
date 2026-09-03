@@ -19,7 +19,7 @@ import net.minecraft.world.level.NaturalSpawner;
  */
 @Mixin(NaturalSpawner.class)
 public class ReduceEndermanSpawnMixin {
-	private static final float ENDERMAN_SPAWN_CHANCE = 0.0015f;
+	private static final float ENDERMAN_SPAWN_CHANCE = 0.1f;
 
 	@Inject(method = "isValidPositionForMob", at = @At("RETURN"), cancellable = true)
 	private static void onlyend$reduceEndermanSpawns(ServerLevel level, Mob mob, double distanceSquared, CallbackInfoReturnable<Boolean> cir) {
